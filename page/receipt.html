@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struk Penjualan - Bank Sampah</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../responsive.css" />
+  </head>
+  <body>
+    <div class="receipt-container">
+      <div class="receipt-header">
+        <h1>Struk Penjualan</h1>
+        <p>Bank Sampah SMKN 8 Malang</p>
+        <p>Tanggal: <span id="date"></span></p>
+      </div>
+      <div class="receipt-body">
+        <table>
+          <thead>
+            <tr>
+              <th>Nama Penjual</th>
+              <th>Kelas</th>
+              <th>Jenis Sampah</th>
+              <th>Jumlah (Kg)</th>
+              <th>Total Harga (IDR)</th>
+            </tr>
+          </thead>
+          <tbody id="receiptData">
+            <!-- Data dari JavaScript akan diisi di sini -->
+          </tbody>
+        </table>
+      </div>
+      <div class="receipt-footer">
+        <p>Terima kasih telah berkontribusi pada lingkungan!</p>
+      </div>
+    </div>
+
+    <button class="home-button" onclick="window.location.href='../index.html'">
+      Kembali ke Beranda
+    </button>
+
+    <script></script>
+    <script src="../script.js"></script>
+    <script src="receipt.js"></script>
+  </body>
+</html>

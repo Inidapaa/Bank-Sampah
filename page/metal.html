@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Sampah</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../responsive.css" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    /> -->
+  </head>
+  <body>
+    <!-- =====NAVBAR SECTION===== -->
+    <header id="navbar">
+      <div class="judul">
+        <div class="logo">
+          <a href="#"><img src="../assets/logo.png" alt="logo" /></a>
+        </div>
+        <h3>Bank Sampah</h3>
+      </div>
+      <div>
+        <ul id="links">
+          <li><a href="../index.html">Beranda</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+          <i id="close" class="fa fa-times"></i>
+        </ul>
+      </div>
+      <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </header>
+
+    <!-- =====LANDING PAGE SECTION===== -->
+    <section id="metal-header" class="p-container">
+      <div class="content">
+        <h2>Sampah Logam</h2>
+      </div>
+    </section>
+
+    <!-- =====PRICE TABLE SECTION===== -->
+    <section id="price-table" class="p-container spacer">
+      <h2>Harga /Kilogram</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Jenis Sampah</th>
+            <th>Harga /Kg (IDR)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sampah Plastik</td>
+            <td>Rp 5,000</td>
+          </tr>
+          <tr>
+            <td>Kertas</td>
+            <td>Rp 3,000</td>
+          </tr>
+          <tr>
+            <td>Logam</td>
+            <td>Rp 8,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- =====COLLECTION FORUM SECTION===== -->
+    <section id="collection-forum" class="p-container spacer">
+      <h2>Forum Pengumpulan Sampah Logam</h2>
+      <form id="wasteForm">
+        <label for="name">Nama Penjual:</label>
+        <input type="text" id="name" required />
+
+        <label for="class">Kelas:</label>
+        <input type="text" id="class" required />
+
+        <label for="wasteType">Jenis Sampah:</label>
+        <select id="wasteType" required>
+          <option value="Plastik">Logam</option>
+        </select>
+
+        <label for="amount">Jumlah Sampah (Kg):</label>
+        <input type="number" id="amount" min="1" required />
+
+        <button type="submit">Tambah Data</button>
+      </form>
+      <table id="sellerDataTable">
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Kelas</th>
+            <th>Jenis Sampah</th>
+            <th>Jumlah (Kg)</th>
+            <th>Harga Total (IDR)</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- =====PRINT RECEIPT BUTTON===== -->
+    <button id="printReceipt">Cetak Struk Penjualan</button>
+
+    <!-- =====FOOTER SECTION===== -->
+    <footer class="section-p1">
+      <div class="col">
+        <img
+          class="logo"
+          src="/assets/logo.png"
+          alt="logo"
+          width="50px"
+          height="53px"
+        />
+        <h4>SMKN 8 Malang</h4>
+        <h5>ASTAARKANANTA</h5>
+      </div>
+
+      <div class="col">
+        <h4>Hubungi Kami</h4>
+        <p>
+          <strong>Address: </strong>Jl. Teluk Pacitan, Arjosari, Kec. Blimbing,
+          Kota Malang, Jawa Timur 65126
+        </p>
+        <p><strong>Telepon: </strong>(0341) 479148</p>
+        <p><strong>Email: </strong>smkn8mlg@sch.id</p>
+        <!-- <div class="follow">
+          <h4>Ikuti Kami</h4>
+          <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="col">
+        <h4>Tautan Cepat</h4>
+        <a href="../index.html">Beranda</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../about.html">Tentang Kami</a>
+        <a href="../contact.html">Hubungi Kami</a>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright © 2024. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="page.js"></script>
+    <script src="receipt.js"></script>
+  </body>
+</html>
