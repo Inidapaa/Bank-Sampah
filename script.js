@@ -26,13 +26,13 @@ const scriptURL =
         .then(response => response.text()) // Menangani response sebagai text
         .then(data => {
           alert('Data berhasil dikirim!');
-          console.log('Response:', data); // Log response untuk debugging
+          console.log('Response:', data); // Log response success
           // Reset form setelah data terkirim
           document.getElementById('feedbackForm').reset();
         })
         .catch(error => {
-          console.error('Error!', error.message); // Menangani error jika terjadi
-          alert('Terjadi kesalahan! Periksa console untuk detail');
+          console.error('Error!', error.message); // Pesan error
+          alert('Terjadi kesalahan!');
         });
       });
 

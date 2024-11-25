@@ -225,109 +225,6 @@ p {
   margin-bottom: 10px;
 }
 
-/* =====FEATURED PRODUCT SECTION===== */
-#product1 {
-  text-align: center;
-}
-
-#product1 h1 {
-  margin-bottom: 10px;
-}
-
-#product1 .pro-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 200px 0 20px 0;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-#product1 .pro {
-  position: relative;
-  width: 23%;
-  min-width: 250px;
-  padding: 20px 22px;
-  background-color: #f1f1f1;
-  border: 1px solid #cce7d0;
-  border-radius: 25px;
-  cursor: default;
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
-  transition: 0.3s ease-in-out;
-}
-
-#product1 .pro:hover {
-  box-shadow: 20px 20px 30px rgba(8, 129, 120, 0.15);
-  transition: 0.3s ease-in-out;
-}
-
-#product1 .pro img {
-  width: 100%;
-  border-radius: 20px;
-  transition: 0.3s ease-in-out;
-}
-
-#product1 .pro img:hover {
-  transform: scale(1.1);
-  transition: 0.3s ease-in-out;
-  box-shadow: 0px 0px 30px rgba(8, 129, 120, 0.5);
-}
-
-#product1 .pro .des {
-  cursor: default;
-  text-align: start;
-  padding: 25px 0;
-}
-
-#product1 .pro .des span {
-  color: #606063;
-  
-}
-
-#product1 .pro .des h5 {
-  padding-top: 7px;
-  color: #1a1a1a;
-  font-size: 2rem;
-}
-
-#product1 .pro .des h4 {
-  padding-top: 0px;
-  font-weight: 700;
-  color: #088178;
-}
-
-#product1 .pro i {
-  font-size: 1.5rem;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 50px;
-  background-color: #e8f6ea;
-  color: #088178;
-  border: 1px solid #cce7d0;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  transition: 0.3s ease-in-out;
-}
-
-#product1 .pro i:hover {
-  background-color: #088178;
-  color: white;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.more {
-  text-decoration: none;
-  color: #088178;
-  font-size: 1.5em;
-}
-
-.more:hover {
-  text-decoration: underline;
-  color: #066862;
-}
-
 /* =====BANNER SECTION===== */
 #banner {
   display: flex;
@@ -583,7 +480,7 @@ footer .copyright {
 
 /* ============================================================================= */
 /* ===== Style for Receipt ===== */
-/* Gaya CSS untuk struk */
+/* CSS Receipt Styles */
 .receipt-container {
   width: 80%;
   max-width: 600px;
@@ -849,59 +746,6 @@ form button:hover {
   color: white;
 }
 
-/* =====SINGLE PRODUCT PAGE===== */
-#product-details {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-#product-details .single-pro-image {
-  width: 40%;
-  margin-right: 50px;
-}
-
-#product-details .single-pro-details h4 {
-  padding: 10px 0 20px 0;
-  font-size: 5em;
-}
-
-#product-details .single-pro-details h2{
-  font-size: 4em;
-}
-
-#product-details .single-pro-details h6{
-  font-size: 1.3em;
-  font-weight: 400;
-  color: #606063;
-}
-
-#product-details .single-pro-details input {
-  width: 50px;
-  height: 47px;
-  padding-left: 10px;
-  font-size: 1em;
-  margin-right: 10px;
-  margin-top: 20px;
-}
-
-#product-details .single-pro-details button {
-  font-size: 1em;
-  background-color: #088178;
-  color: white;
-  border: none;
-  padding: 0 25px 0 25px;
-  height: 47px;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0px 5px 10px rgba(8, 129, 120, 0.2);
-}
-
-#product-details .single-pro-details button:hover {
-  background-color: #066658;
-}
-
 /* =====BLOG PAGE===== */
 #page-header.blog-header {
   background-image: url(assets/blogbg.png);
@@ -999,7 +843,6 @@ form button:hover {
   margin-bottom: 20px;
 }
 
-/* Vision & Mission Section Styles */
 #vision-mission {
   background-color: white;
   padding: 60px 20px;
@@ -1158,81 +1001,3 @@ form button:hover {
 .submit-btn:hover {
   background-color: #066b62;
 }
-
-/* =====CART PAGE===== */
-/* =====Tata Letak Keranjang===== */
-#cart {
-  text-align: center;
-  padding: 20px;
-}
-
-#cart h1 {
-  font-size: 2.5em;
-  color: #088178;
-  margin-bottom: 30px;
-}
-
-#cart-table {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  border-collapse: collapse;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#cart-table th,
-#cart-table td {
-  padding: 12px;
-  text-align: left;
-  border: 1px solid #ddd;
-}
-
-#cart-table th {
-  background-color: #088178;
-  color: white;
-  font-size: 1.1em;
-}
-
-#cart-table td {
-  font-size: 1em;
-}
-
-#total-price {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #088178;
-  margin-top: 20px;
-}
-
-#clear-cart {
-  padding: 10px 30px;
-  background-color: #ec544e;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 30px;
-  transition: background-color 0.3s;
-}
-
-#clear-cart:hover {
-  background-color: #d94439;
-}
-
-/* Responsif untuk tampilan kecil */
-@media (max-width: 768px) {
-  #cart h1 {
-    font-size: 2em;
-  }
-
-  #cart-table th,
-  #cart-table td {
-    font-size: 0.9em;
-  }
-
-  #total-price {
-    font-size: 1.2em;
-  }
-}
-
-
