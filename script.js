@@ -15,7 +15,6 @@ if (close) {
 }
 
 // =====OUTPUT FORM SPREEDSHEAT=====
-
 const scriptURL =
         "https://script.google.com/macros/s/AKfycbywoAXaT0leOQHe9X5CgZQtuuDlDA12qUuZkzio3jNOY6fmx0zKwlplgcRiNEW9n-2l/exec";
       const form = document.forms["submit-to-google-sheet"];

@@ -29,9 +29,9 @@
       <div>
         <ul id="links">
           <li><a href="../index.html">Beranda</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html">Tentang</a></li>
-          <li><a href="contact.html">Kontak</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../about.html">Tentang</a></li>
+          <li><a href="../contact.html">Kontak</a></li>
           <i id="close" class="fa fa-times"></i>
         </ul>
       </div>
@@ -63,11 +63,11 @@
             <td>Rp 5,000</td>
           </tr>
           <tr>
-            <td>Kertas</td>
+            <td>Sampah Kertas</td>
             <td>Rp 3,000</td>
           </tr>
           <tr>
-            <td>Logam</td>
+            <td>Sampah Logam</td>
             <td>Rp 8,000</td>
           </tr>
         </tbody>
@@ -81,12 +81,14 @@
         <label for="name">Nama Penjual:</label>
         <input type="text" id="name" required />
 
-        <label for="class">Kelas:</label>
+        <label for="class">Kelas & Jurusan:</label>
         <input type="text" id="class" required />
 
         <label for="wasteType">Jenis Sampah:</label>
         <select id="wasteType" required>
-          <option value="Plastik">Logam</option>
+          <option value="Logam" selected>Logam</option>
+          <!-- <option value="Plastik" disabled>Plastik</option>
+          <option value="Kertas" disabled>Kertas</option> -->
         </select>
 
         <label for="amount">Jumlah Sampah (Kg):</label>
@@ -101,7 +103,7 @@
             <th>Kelas</th>
             <th>Jenis Sampah</th>
             <th>Jumlah (Kg)</th>
-            <th>Harga Total (IDR)</th>
+            <th>Harga Total (Rp)</th>
             <th>Aksi</th>
           </tr>
         </thead>
@@ -158,7 +160,7 @@
       </div>
     </footer>
 
-    <script src="page.js"></script>
+    <script src="../script.js"></script>
     <script src="receipt.js"></script>
   </body>
 </html>

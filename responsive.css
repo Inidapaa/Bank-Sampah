@@ -186,6 +186,14 @@
     padding: 15px;
   }
 
+  /* =====CONTACT PAGE=====  */
+  #contact-details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 50px;
+  }
+
   footer {
     flex-direction: column;
   }
@@ -235,7 +243,7 @@
   }
 
   #product1 .pro {
-    width: 100%; /* Satu kolom penuh di layar kecil */
+    width: 100%;
     min-width: 0;
   }
 
@@ -286,36 +294,6 @@
 
   footer .col {
     margin-left: 40px;
-  }
-
-  /* ===== SINGLE PRODUCT PAGE ==== */
-
-  #product-details {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #product-details .single-pro-details h4 {
-    font-size: 3em;
-    padding: 5px 0 5px 0;
-  }
-
-  #product-details .single-pro-details h2 {
-    font-size: 2em;
-  }
-
-  #product-details .single-pro-image {
-    width: 100%;
-    margin-right: 0px;
-    margin-bottom: 50px;
-  }
-
-  #product-details .single-pro-details input {
-    margin-top: 10px;
-  }
-
-  #product-details .single-pro-details button {
-    margin-top: 20px;
   }
 
   /* =====RECEIPT PAGE===== */
@@ -371,6 +349,18 @@
   }
 
   #vision-mission h2 {
+    font-size: 1.5em;
+  }
+
+  /* =====CONTACT PAGE===== */
+  #contact-details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 50px;
+  }
+
+  #contact-details .details h2 {
     font-size: 1.5em;
   }
 }
